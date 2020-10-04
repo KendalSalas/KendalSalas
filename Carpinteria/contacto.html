@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f9d46f0574.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>AnSa</title>
+</head>
+<body>
+    <header class="site-header inicio">
+        <div class="contenido-header">
+            <div class="barra">
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <div class="titulo">
+                <h1>AnSa</h1>
+                <h1>Construcciones Menores</h1>
+            </div>
+        </div>
+    </header>
+    
+    <h1 class="fw-300 centrar">Contacto</h1>
+    <main class="contenedor contenido-centrado">
+        <form action="enviar.php" method="POST" onsubmit="return validar();">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" maxlength="20" required>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" placeholder="E-mail" maxlength="40" required>
+
+                <label for="telefono">Número de Contacto: </label>
+                <input type="number" id="telefono" name="telefono" placeholder="Formato: 9-12345678" required> 
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea name="mensaje" placeholder="Ingrese su mensaje" required></textarea>
+            </fieldset>
+
+            <input type="submit" class="boton submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="productos.html">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/validar.js"></script>
+</body>
+</html>
